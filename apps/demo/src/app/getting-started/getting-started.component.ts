@@ -1,10 +1,11 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-getting-started',
-  templateUrl: './getting-started.component.html',
-  styleUrls: ['./getting-started.component.css'],
-  encapsulation: ViewEncapsulation.None
+    selector: 'app-getting-started',
+    templateUrl: './getting-started.component.html',
+    styleUrls: ['./getting-started.component.css'],
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class GettingStartedComponent implements OnInit {
 
@@ -25,7 +26,7 @@ export class GettingStartedComponent implements OnInit {
       imports: [NgxGaugeModule],
       ...
   })
-  export class AppModule { }  
+  export class AppModule { }
   `;
 
   step3Install: string = `import { Component } from '@angular/core';
@@ -35,16 +36,16 @@ export class GettingStartedComponent implements OnInit {
       templateUrl: 'app.html'
   })
   export class AppComponent {
-      
+
       gaugeType = "semi";
       gaugeValue = 28.3;
       gaugeLabel = "Speed";
       gaugeAppendText = "km/hr";
   }`;
 
-  step3Install2 = `<ngx-gauge [type]="gaugeType" 
-           [value]="gaugeValue" 
-           [label]="gaugeLabel"  
+  step3Install2 = `<ngx-gauge [type]="gaugeType"
+           [value]="gaugeValue"
+           [label]="gaugeLabel"
            [append]="gaugeAppendText">
 </ngx-gauge>`;
 }
