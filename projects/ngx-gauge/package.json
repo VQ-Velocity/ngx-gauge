@@ -1,14 +1,14 @@
 {
     "name": "ngx-gauge",
-    "version": "11.0.0",
+    "version": "11.2.0",
     "description": "A highly customizable Gauge Component for Angular 4+ apps and dashboards",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/ashish-chopra/ngx-gauge.git"
     },
     "peerDependencies": {
-        "@angular/common": "^19.0.0",
-        "@angular/core": "^19.0.0"
+        "@angular/common": "^20.0.0",
+        "@angular/core": "^20.0.0"
     },
     "keywords": [
         "angular",
@@ -30,7 +30,14 @@
         "url": "https://github.com/ashish-chopra/ngx-gauge/issues"
     },
     "dependencies": {
-        "tslib": "^2.0.0"
+       "tslib": "^2.5.0"
+    },
+    "devDependencies": {
+        "@angular-devkit/build-angular": "^20.0.0",
+        "@angular/cli": "^20.0.0",
+        "@angular/compiler-cli": "^20.0.0",
+        "@angular/language-service": "^20.0.0",
+        "typescript": "^5.6.0"
     },
     "homepage": "https://github.com/ashish-chopra/ngx-gauge#readme"
 }
